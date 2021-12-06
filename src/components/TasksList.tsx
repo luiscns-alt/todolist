@@ -72,7 +72,7 @@ export function TasksList({
                             testID={`trash-${index}`}
                             style={{ paddingHorizontal: 24 }}
                             //TODO - use onPress (remove task) prop
-                        >
+                            onPress={() => removeTask(item.id)}>
                             <Image source={trashIcon} />
                         </TouchableOpacity>
                     </ItemWrapper>
